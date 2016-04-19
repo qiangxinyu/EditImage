@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SmallCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="162" height="245"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="162" height="245"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="239-0U-eX7">
+                        <rect key="frame" x="0.0" y="0.0" width="162" height="245"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0wS-Zd-78y">
+                                <rect key="frame" x="10" y="10" width="152" height="235"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OxO-3b-BN9">
+                                <rect key="frame" x="12" y="12" width="148" height="231"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="OxO-3b-BN9" secondAttribute="trailing" constant="2" id="6mK-pa-huA"/>
+                            <constraint firstItem="OxO-3b-BN9" firstAttribute="leading" secondItem="239-0U-eX7" secondAttribute="leading" constant="12" id="AM1-VH-g9c"/>
+                            <constraint firstAttribute="trailing" secondItem="0wS-Zd-78y" secondAttribute="trailing" id="KDs-bD-gEY"/>
+                            <constraint firstItem="OxO-3b-BN9" firstAttribute="top" secondItem="239-0U-eX7" secondAttribute="top" constant="12" id="LdN-uB-ggo"/>
+                            <constraint firstItem="0wS-Zd-78y" firstAttribute="leading" secondItem="239-0U-eX7" secondAttribute="leading" constant="10" id="R3y-UF-CBu"/>
+                            <constraint firstItem="0wS-Zd-78y" firstAttribute="top" secondItem="239-0U-eX7" secondAttribute="top" constant="10" id="XbR-94-40P"/>
+                            <constraint firstAttribute="bottom" secondItem="0wS-Zd-78y" secondAttribute="bottom" id="eci-8h-htf"/>
+                            <constraint firstAttribute="bottom" secondItem="OxO-3b-BN9" secondAttribute="bottom" constant="2" id="i4a-nh-o5v"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="raT-tk-y82">
+                        <rect key="frame" x="0.0" y="0.0" width="162" height="245"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="239-0U-eX7" secondAttribute="bottom" id="Gok-bj-Ec8"/>
+                <constraint firstItem="raT-tk-y82" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="IXN-o1-u1q"/>
+                <constraint firstAttribute="trailing" secondItem="239-0U-eX7" secondAttribute="trailing" id="Mbk-i0-tei"/>
+                <constraint firstAttribute="bottom" secondItem="raT-tk-y82" secondAttribute="bottom" id="YGb-IV-cva"/>
+                <constraint firstItem="raT-tk-y82" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hWK-mM-mr8"/>
+                <constraint firstAttribute="trailing" secondItem="raT-tk-y82" secondAttribute="trailing" id="rfU-bv-ehG"/>
+                <constraint firstItem="239-0U-eX7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="y4m-W9-80k"/>
+                <constraint firstItem="239-0U-eX7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zGa-cT-lJw"/>
+            </constraints>
+            <size key="customSize" width="162" height="245"/>
+            <connections>
+                <outlet property="backgroudView" destination="0wS-Zd-78y" id="c1n-0Q-vUC"/>
+                <outlet property="downView" destination="239-0U-eX7" id="5RT-Ji-mRG"/>
+                <outlet property="imageView" destination="OxO-3b-BN9" id="cbH-Gg-DAV"/>
+                <outlet property="upView" destination="raT-tk-y82" id="hWK-FX-Giz"/>
+            </connections>
+            <point key="canvasLocation" x="330" y="417.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

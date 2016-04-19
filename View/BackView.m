@@ -1,0 +1,28 @@
+//
+//  BackView.m
+//  testpicture
+//
+//  Created by 中科创奇 on 15/6/13.
+//  Copyright (c) 2015年 中科创奇. All rights reserved.
+//
+
+#import "BackView.h"
+
+@implementation BackView
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    if ([super initWithFrame:frame]) {
+        
+        self.backgroundColor = [UIColor clearColor];
+    }
+    return self;
+}
+
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
+{
+    return NO;
+}
+
+
+@end

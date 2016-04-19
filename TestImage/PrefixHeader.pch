@@ -1,0 +1,23 @@
+//
+//  PrefixHeader.pch
+//  testpicture
+//
+//  Created by 中科创奇 on 15/6/13.
+//  Copyright (c) 2015年 中科创奇. All rights reserved.
+//
+
+#ifndef testpicture_PrefixHeader_pch
+#define testpicture_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+#define kScreenWidth  [UIScreen mainScreen].bounds.size.width
+
+
+#define kWidth (kScreenWidth - 100)
+#define kHeight (kScreenHeight - 70 - 70 - 60)
+
+#define WeakSelf(weakSelf) __weak __typeof(&*self)weakSelf = self
+
+#endif
